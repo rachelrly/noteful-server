@@ -1,3 +1,4 @@
+const path = require('path')
 const knex = require('knex')
 const app = require('./app')
 
