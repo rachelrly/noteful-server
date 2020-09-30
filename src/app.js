@@ -16,8 +16,8 @@ app.use(morgan(morganOption))
 app.use(express.json())
 app.use(helmet())
 app.use(cors())
-app.use('/api/folders', foldersRouter)
-app.use('/api/notes', notesRouter)
+app.use('api/folders', foldersRouter)
+app.use('api/notes', notesRouter)
 
 app.get('/', (req, res) => {
     res.send('Hello Noteful!')
@@ -35,11 +35,3 @@ app.use(function errorHandler(error, req, res, next) {
 })
 
 module.exports = app;
-
-//GAMEPLAN
-//MAKE ROUTES FOR 
-    // API/NOTES
-    // API/NOTES:ID
-
-//CONNECT TO CLIENT
-    //WHILE RUNNING SERVER
